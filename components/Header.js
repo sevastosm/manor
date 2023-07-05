@@ -37,23 +37,48 @@ export default function Header({ data, headerBlack }) {
             <img
               src={
                 headerBlack
-                  ? "/img/layout/general/logo-white.png"
-                  : "/img/layout/general/logo.png"
+                  ? process.env.NODE_ENV === "production"
+                    ? "/manor"
+                    : "" + "/img/layout/general/logo-white.png"
+                  : process.env.NODE_ENV === "production"
+                  ? "/manor"
+                  : "" + "/img/layout/general/logo.png"
               }
               alt="image"
             />
           </Link>
           <div className="header__open" onClick={open}>
             {headerBlack ? (
-              <img src="/img/layout/general/nav-open-white.svg" alt="image" />
+              <img
+                src={
+                  process.env.NODE_ENV === "production"
+                    ? "/manor"
+                    : "" + "/img/layout/general/nav-open-white.svg"
+                }
+                alt="image"
+              />
             ) : (
-              <img src="/img/layout/general/nav-open.svg" alt="image" />
+              <img
+                src={
+                  process.env.NODE_ENV === "production"
+                    ? "/manor"
+                    : "" + "/img/layout/general/nav-open.svg"
+                }
+                alt="image"
+              />
             )}
           </div>
 
           <div className={`header__nav ${isOpen ? "active" : ""}`}>
             <div className="header__close" onClick={close}>
-              <img src="/img/layout/general/close.png" alt="image" />
+              <img
+                src={
+                  process.env.NODE_ENV === "production"
+                    ? "/manor"
+                    : "" + "/img/layout/general/close.png"
+                }
+                alt="image"
+              />
             </div>
             <ul className="header__list">
               {menus?.map((menu, index) => {
@@ -113,7 +138,14 @@ export default function Header({ data, headerBlack }) {
                       target="_blank"
                       className="social__item"
                     >
-                      <img src="/img/layout/general/email.png" alt="email" />
+                      <img
+                        src={
+                          process.env.NODE_ENV === "production"
+                            ? "/manor"
+                            : "" + "/img/layout/general/email.png"
+                        }
+                        alt="email"
+                      />
                     </Link>
                     <Link
                       href={`https://www.instagram.com/${studio?.instagram.slice(
@@ -123,7 +155,11 @@ export default function Header({ data, headerBlack }) {
                       className="social__item"
                     >
                       <img
-                        src="/img/layout/general/Instagram.png"
+                        src={
+                          process.env.NODE_ENV === "production"
+                            ? "/manor"
+                            : "" + "/img/layout/general/Instagram.png"
+                        }
                         alt="instagram"
                       />
                     </Link>
@@ -132,7 +168,14 @@ export default function Header({ data, headerBlack }) {
                       target="_blank"
                       className="social__item"
                     >
-                      <img src="/img/layout/general/v-white.png" alt="image" />
+                      <img
+                        src={
+                          process.env.NODE_ENV === "production"
+                            ? "/manor"
+                            : "" + "/img/layout/general/v-white.png"
+                        }
+                        alt="image"
+                      />
                     </Link>
                   </div>
                 ) : (
@@ -142,7 +185,14 @@ export default function Header({ data, headerBlack }) {
                       target="_blank"
                       className="social__item"
                     >
-                      <img src="/img/layout/general/email.png" alt="email" />
+                      <img
+                        src={
+                          process.env.NODE_ENV === "production"
+                            ? "/manor"
+                            : "" + "/img/layout/general/email.png"
+                        }
+                        alt="email"
+                      />
                     </Link>
                     <Link
                       href={`https://www.instagram.com/${studio?.instagram.slice(
@@ -152,7 +202,11 @@ export default function Header({ data, headerBlack }) {
                       className="social__item"
                     >
                       <img
-                        src="/img/layout/general/Instagram.png"
+                        src={
+                          process.env.NODE_ENV === "production"
+                            ? "/manor"
+                            : "" + "/img/layout/general/Instagram.png"
+                        }
                         alt="instagram"
                       />
                     </Link>
@@ -161,7 +215,14 @@ export default function Header({ data, headerBlack }) {
                       target="_blank"
                       className="social__item"
                     >
-                      <img src="/img/layout/general/vimeo.png" alt="video" />
+                      <img
+                        src={
+                          process.env.NODE_ENV === "production"
+                            ? "/manor"
+                            : "" + "/img/layout/general/vimeo.png"
+                        }
+                        alt="video"
+                      />
                     </Link>
                   </div>
                 )}
@@ -176,14 +237,28 @@ export default function Header({ data, headerBlack }) {
                 target="_blank"
                 className="social__item"
               >
-                <img src="/img/layout/general/Instagram.png" alt="image" />
+                <img
+                  src={
+                    process.env.NODE_ENV === "production"
+                      ? "/manor"
+                      : "" + "/img/layout/general/Instagram.png"
+                  }
+                  alt="image"
+                />
               </Link>
               <Link
                 href={studio?.vimeo}
                 target="_blank"
                 className="social__item"
               >
-                <img src="/img/layout/general/v-white.png" alt="image" />
+                <img
+                  src={
+                    process.env.NODE_ENV === "production"
+                      ? "/manor"
+                      : "" + "/img/layout/general/v-white.png"
+                  }
+                  alt="image"
+                />
               </Link>
             </div>
           ) : (
@@ -193,14 +268,28 @@ export default function Header({ data, headerBlack }) {
                 target="_blank"
                 className="social__item"
               >
-                <img src="/img/layout/general/instagram.svg" alt="image" />
+                <img
+                  src={
+                    process.env.NODE_ENV === "production"
+                      ? "/manor"
+                      : "" + "/img/layout/general/instagram.svg"
+                  }
+                  alt="image"
+                />
               </Link>
               <Link
                 href={studio?.vimeo}
                 target="_blank"
                 className="social__item"
               >
-                <img src="/img/layout/general/vimeo-black.png" alt="image" />
+                <img
+                  src={
+                    process.env.NODE_ENV === "production"
+                      ? "/manor"
+                      : "" + "/img/layout/general/vimeo-black.png"
+                  }
+                  alt="image"
+                />
               </Link>
             </div>
           )}

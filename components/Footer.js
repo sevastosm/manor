@@ -52,21 +52,42 @@ export default function Footer({ data, smallFooter }) {
                 target="_blank"
                 className="social__item"
               >
-                <img src="/img/layout/general/email.png" alt="email" />
+                <img
+                  src={
+                    process.env.NODE_ENV === "production"
+                      ? "/manor"
+                      : "" + "/img/layout/general/email.png"
+                  }
+                  alt="email"
+                />
               </Link>
               <Link
                 href={`https://www.instagram.com/${studio?.instagram.slice(1)}`}
                 target="_blank"
                 className="social__item"
               >
-                <img src="/img/layout/general/Instagram.png" alt="instagram" />
+                <img
+                  src={
+                    process.env.NODE_ENV === "production"
+                      ? "/manor"
+                      : "" + "/img/layout/general/Instagram.png"
+                  }
+                  alt="instagram"
+                />
               </Link>
               <Link
                 href={studio?.vimeo}
                 target="_blank"
                 className="social__item"
               >
-                <img src="/img/layout/general/vimeo.png" alt="video" />
+                <img
+                  src={
+                    process.env.NODE_ENV === "production"
+                      ? "/manor"
+                      : "" + "/img/layout/general/vimeo.png"
+                  }
+                  alt="video"
+                />
               </Link>
             </div>
           </div>
