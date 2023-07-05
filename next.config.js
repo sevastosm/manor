@@ -8,11 +8,11 @@ const nextConfig = {
   reactStrictMode: true,
   domains: ["localhost", "sevastosm.github.io/manor", "fonts.googleapis.com"],
   images: {
-    // domains: [
-    //   "sevastosm.github.io/manor",
-    //   "localhost",
-    //   "media.graphassets.com",
-    // ],
+    domains: [
+      "sevastosm.github.io/manor",
+      "localhost",
+      "media.graphassets.com",
+    ],
     unoptimized: true,
   },
   // assetPrefix: assetPrefix,
