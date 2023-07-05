@@ -136,7 +136,7 @@ export default function Header({ data, headerBlack }) {
                       className="social__item"
                     >
                       <img
-                        src="/img/layout/general/Instagram.png"
+                        src={imagePath + "/img/layout/general/Instagram.png"}
                         alt="instagram"
                       />
                     </Link>
