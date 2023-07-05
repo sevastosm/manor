@@ -75,7 +75,7 @@ export default function ProjectComponent({ project }) {
                     key={image.id}
                     className={`gallery__item ${itemClass} animation-div--relative`}
                   >
-                    {/* <AnimationDiv
+                    {/* <AnimationDivere
                     scenario={"width"}
                     className={"animation-div__mask"}
                     duration="1"
