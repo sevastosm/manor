@@ -1,0 +1,12 @@
+/*! Developer 	  : ______________ ; 
+	Team 		  : TacticLead.com ;
+	Teamlead & PM : Sergey Gamal / @sergeygamal; */
+
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap");
+@import "mixins"; // mixins for compiling
+@import "variables"; // project variables
+@import "fonts"; // including fonts
+@import "base"; // all base resets, typorgaphy, buttons, etc.
+@import "blocks/blocks"; // header + footer + all other sections of pages
+@import "popups"; // all modal windows layout

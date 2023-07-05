@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^project/(.*)$ /project.html?id=$1 [L,R=301]
+
+Redirect 301 /studio /studio.html
+Redirect 301 /careers /careers.html
+Redirect 301 /contact /contact.html

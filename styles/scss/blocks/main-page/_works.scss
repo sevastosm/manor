@@ -1,0 +1,141 @@
+
+.works {
+	padding: 90px 0 10px;
+
+	@include maxw(1000px) {
+		padding: 80px 0 10px;
+	}
+
+	@include maxw(768px) {
+		padding: 50px 0 10px;
+	}
+
+	&__title {
+		position: relative;
+		margin-bottom: 90px;
+		padding-left: 15px;
+		font-family: $font2;
+		font-size: 60px;
+		line-height: 1;
+		font-weight: 400;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 1.3vh;
+			left: 0;
+			width: 3px;
+			height: 91%;
+			background-color: $black;
+		}
+
+		@include maxw(1000px) {
+			font-size: 44px;
+
+			&::before {
+				bottom: .7vh;
+				height: 92%;
+			}
+		}	
+
+		@include maxw(768px) {
+			font-size: 30px;
+			margin-bottom: 50px;
+
+			&::before {
+				height: 91%;
+			}
+		}
+
+		@include maxw(576px) {
+
+			&::before {
+				height: 94%;
+			}
+		}
+
+		@include maxw(420px) {
+
+			&::before {
+				height: 95%;
+			}
+		}
+
+		@include maxw(359px) {
+			font-size: 25px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 49.5%;
+		margin-bottom: 120px;
+
+		@include maxw(1000px) {
+			margin-bottom: 58px;
+		}
+
+		@include maxw(768px) {
+			margin-bottom: 40px;
+		}
+
+		@include maxw(576px) {
+			width: 100%;
+		}
+	}
+
+	&__img {
+		display: block;
+		height: 29.86vw;
+		margin-bottom: 20px;
+
+		@include minw(1921px) {
+			height: 570px;
+		}
+
+		@include maxw(576px) {
+			height: 55vw;
+		}
+
+		@include maxw(390px) {
+			height: 220px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__name {
+		font-size: 35px;
+		line-height: 1.31;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		@include maxw(768px) {
+			font-size: 25px;
+		}
+	}
+
+	&__desc {
+		min-height: 52px;
+		font-size: 21px;
+		line-height: 1.33;
+		font-weight: 300;
+		margin-right: 30px;
+
+		@include maxw(768px) {
+			font-size: 15px;
+			min-height: auto;
+		}
+	}
+}

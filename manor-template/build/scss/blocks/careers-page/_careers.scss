@@ -1,0 +1,64 @@
+
+.jobs {
+
+	@include maxw(640px) {
+		margin-top: 35px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		text-align: center;
+
+		@include maxw(640px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 426px;
+		height: 101px;
+		margin: 0 auto 40px;
+		padding: 10px;
+		border: 3px solid $black;
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		border-radius: 3px;
+
+		@include maxw(850px) {
+			border: 2px solid $black;
+		}
+
+		@include maxw(640px) {
+			font-size: 24px;
+			height: 78px;
+			border: 1px solid $black;
+		}
+
+		@include maxw(576px) {
+			width: 100%;
+			margin: 0 auto 20px;
+		}
+
+		span {
+			border-bottom: 1px solid transparent;
+			display: inline-block;
+			padding-bottom: 2px;
+		}
+
+		&:hover {
+			span {
+				border-bottom: 1px solid $black;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

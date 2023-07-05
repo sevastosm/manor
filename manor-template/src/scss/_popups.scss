@@ -1,0 +1,116 @@
+.blocker {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 100 !important;
+    padding: 80px 0 !important;
+    box-sizing: border-box;
+   	background: transparent !important;
+    text-align: center;
+    overflow: visible;
+
+}
+
+.modal {
+    display: none;
+    vertical-align: middle;
+    position: relative !important;
+    z-index: 200 !important;
+    max-width: 1371px !important;
+    box-sizing: border-box;
+    width: 100% !important;
+    background: #EDE9E7 !important;
+    padding: 40px 40px 63px !important;
+    border: 2px solid #000000;
+    text-align: left;
+    color: $black;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    @include maxw(1440px) {
+		width: 95% !important;
+	}
+
+	@include maxw(640px) {
+		padding: 20px !important;
+		border: 1px solid #000000;
+	}
+}
+
+.close-modal {
+    z-index: 100 !important;
+    text-indent: 9999px !important;
+    top: 47px !important;
+    right: 48px !important;
+    width: 27px !important;
+    height: 27px !important;
+    background-color: transparent !important;
+    border-radius: none !important;
+    background-image: url(../img/layout/general/close-black.svg) !important;
+    background-size: 27px !important;
+
+    @include maxw(640px) {
+		top: 27px !important;
+    	right: 23px !important;
+	}
+}
+
+.modal a.close-modal {
+     z-index: 100 !important;
+}
+
+
+.carrers-popup {
+
+	h2 {
+		margin-bottom: 40px;
+		font-size: 45px;
+		text-transform: none;
+
+		@include maxw(640px) {
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		@include maxw(480px) {
+			max-width: 160px;
+		}
+	}
+
+	p {
+		margin-bottom: 20px;
+		line-height: 1.33;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	ul {
+		margin: 20px 0;
+		list-style: disc;
+		padding-left: 20px;
+
+		li {
+			position: relative;
+			font-size: 21px;
+			line-height: 1.33;
+			font-weight: 300;
+
+			&:last-child {
+				margin-bottom: 0;
+				margin-right: 0;
+			}
+
+			 @include maxw(640px) {
+				font-size: 15px;
+			}
+
+		}
+	}
+}

@@ -1,0 +1,21 @@
+
+.offer {
+
+	&__video {
+		height: 55.56vw;
+
+		@include minw(1921px) {
+			height: 1000px;
+		}
+
+		@include maxw(576px) {
+			height: 285px;
+		}
+
+		iframe {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

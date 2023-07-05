@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Baskerville Display PT';
+    src: url('BaskervilleDisplayPT.woff2') format('woff2'),
+        url('BaskervilleDisplayPT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
