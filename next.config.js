@@ -1,11 +1,22 @@
 /** @type {import('next').NextConfig} */
+
+const repo = "sevastosm.github.io/manor";
+const assetPrefix = `/${repo}/`;
+const basePath = `/${repo}`;
+
 const nextConfig = {
   reactStrictMode: true,
-  domains: ["localhost", "fonts.googleapis.com"],
+  domains: ["localhost", "sevastosm.github.io/manor", "fonts.googleapis.com"],
   images: {
-    domains: ["localhost", "media.graphassets.com"],
+    domains: [
+      "sevastosm.github.io/manor",
+      "localhost",
+      "media.graphassets.com",
+    ],
     unoptimized: true,
   },
+  assetPrefix: assetPrefix,
+  basePath: basePath,
 };
 
 module.exports = nextConfig;
