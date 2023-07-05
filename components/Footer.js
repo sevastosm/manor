@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
+const imagePath = process.env.NODE_ENV === "production" ? "/manor" : "";
 export default function Footer({ data, smallFooter }) {
   const studio = data?.studio;
 
@@ -53,11 +54,7 @@ export default function Footer({ data, smallFooter }) {
                 className="social__item"
               >
                 <img
-                  src={
-                    process.env.NODE_ENV === "production"
-                      ? "/manor"
-                      : "" + "/img/layout/general/email.png"
-                  }
+                  src={imagePath + "/img/layout/general/email.png"}
                   alt="email"
                 />
               </Link>
@@ -67,11 +64,7 @@ export default function Footer({ data, smallFooter }) {
                 className="social__item"
               >
                 <img
-                  src={
-                    process.env.NODE_ENV === "production"
-                      ? "/manor"
-                      : "" + "/img/layout/general/Instagram.png"
-                  }
+                  src={imagePath + "/img/layout/general/Instagram.png"}
                   alt="instagram"
                 />
               </Link>
@@ -81,11 +74,7 @@ export default function Footer({ data, smallFooter }) {
                 className="social__item"
               >
                 <img
-                  src={
-                    process.env.NODE_ENV === "production"
-                      ? "/manor"
-                      : "" + "/img/layout/general/vimeo.png"
-                  }
+                  src={imagePath + "/img/layout/general/vimeo.png"}
                   alt="video"
                 />
               </Link>

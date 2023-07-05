@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import AnimationText from "./animation/AnimationText";
 
+const imagePath = process.env.NODE_ENV === "production" ? "/manor" : "";
+
 export default function Header({ data, headerBlack }) {
   const router = useRouter();
 
@@ -37,12 +39,8 @@ export default function Header({ data, headerBlack }) {
             <img
               src={
                 headerBlack
-                  ? process.env.NODE_ENV === "production"
-                    ? "/manor"
-                    : "" + "/img/layout/general/logo-white.png"
-                  : process.env.NODE_ENV === "production"
-                  ? "/manor"
-                  : "" + "/img/layout/general/logo.png"
+                  ? imagePath + "/img/layout/general/logo-white.png"
+                  : imagePath + "/img/layout/general/logo.png"
               }
               alt="image"
             />
@@ -50,20 +48,12 @@ export default function Header({ data, headerBlack }) {
           <div className="header__open" onClick={open}>
             {headerBlack ? (
               <img
-                src={
-                  process.env.NODE_ENV === "production"
-                    ? "/manor"
-                    : "" + "/img/layout/general/nav-open-white.svg"
-                }
+                src={imagePath + "/img/layout/general/nav-open-white.svg"}
                 alt="image"
               />
             ) : (
               <img
-                src={
-                  process.env.NODE_ENV === "production"
-                    ? "/manor"
-                    : "" + "/img/layout/general/nav-open.svg"
-                }
+                src={imagePath + "/img/layout/general/nav-open.svg"}
                 alt="image"
               />
             )}
@@ -72,11 +62,7 @@ export default function Header({ data, headerBlack }) {
           <div className={`header__nav ${isOpen ? "active" : ""}`}>
             <div className="header__close" onClick={close}>
               <img
-                src={
-                  process.env.NODE_ENV === "production"
-                    ? "/manor"
-                    : "" + "/img/layout/general/close.png"
-                }
+                src={imagePath + "/img/layout/general/close.png"}
                 alt="image"
               />
             </div>
@@ -113,7 +99,7 @@ export default function Header({ data, headerBlack }) {
                   Manor
                 </Link>
                 <div className="header__address">
-                  <div>89 borough high street London se1 1nl dfsdf</div>
+                  <div>89 borough high street London se1 1nl</div>
                 </div>
 
                 <div className="header__copyright">
@@ -139,11 +125,7 @@ export default function Header({ data, headerBlack }) {
                       className="social__item"
                     >
                       <img
-                        src={
-                          process.env.NODE_ENV === "production"
-                            ? "/manor"
-                            : "" + "/img/layout/general/email.png"
-                        }
+                        src={imagePath + "/img/layout/general/email.png"}
                         alt="email"
                       />
                     </Link>
@@ -155,11 +137,7 @@ export default function Header({ data, headerBlack }) {
                       className="social__item"
                     >
                       <img
-                        src={
-                          process.env.NODE_ENV === "production"
-                            ? "/manor"
-                            : "" + "/img/layout/general/Instagram.png"
-                        }
+                        src="/img/layout/general/Instagram.png"
                         alt="instagram"
                       />
                     </Link>
@@ -169,11 +147,7 @@ export default function Header({ data, headerBlack }) {
                       className="social__item"
                     >
                       <img
-                        src={
-                          process.env.NODE_ENV === "production"
-                            ? "/manor"
-                            : "" + "/img/layout/general/v-white.png"
-                        }
+                        src={"/img/layout/general/v-white.png"}
                         alt="image"
                       />
                     </Link>
@@ -186,11 +160,7 @@ export default function Header({ data, headerBlack }) {
                       className="social__item"
                     >
                       <img
-                        src={
-                          process.env.NODE_ENV === "production"
-                            ? "/manor"
-                            : "" + "/img/layout/general/email.png"
-                        }
+                        src={imagePath + "/img/layout/general/email.png"}
                         alt="email"
                       />
                     </Link>
@@ -202,11 +172,7 @@ export default function Header({ data, headerBlack }) {
                       className="social__item"
                     >
                       <img
-                        src={
-                          process.env.NODE_ENV === "production"
-                            ? "/manor"
-                            : "" + "/img/layout/general/Instagram.png"
-                        }
+                        src="/img/layout/general/Instagram.png"
                         alt="instagram"
                       />
                     </Link>
@@ -216,11 +182,7 @@ export default function Header({ data, headerBlack }) {
                       className="social__item"
                     >
                       <img
-                        src={
-                          process.env.NODE_ENV === "production"
-                            ? "/manor"
-                            : "" + "/img/layout/general/vimeo.png"
-                        }
+                        src={imagePath + "/img/layout/general/vimeo.png"}
                         alt="video"
                       />
                     </Link>
@@ -238,11 +200,7 @@ export default function Header({ data, headerBlack }) {
                 className="social__item"
               >
                 <img
-                  src={
-                    process.env.NODE_ENV === "production"
-                      ? "/manor"
-                      : "" + "/img/layout/general/Instagram.png"
-                  }
+                  src={imagePath + "/img/layout/general/Instagram.png"}
                   alt="image"
                 />
               </Link>
@@ -252,11 +210,7 @@ export default function Header({ data, headerBlack }) {
                 className="social__item"
               >
                 <img
-                  src={
-                    process.env.NODE_ENV === "production"
-                      ? "/manor"
-                      : "" + "/img/layout/general/v-white.png"
-                  }
+                  src={imagePath + "/img/layout/general/v-white.png"}
                   alt="image"
                 />
               </Link>
@@ -269,11 +223,7 @@ export default function Header({ data, headerBlack }) {
                 className="social__item"
               >
                 <img
-                  src={
-                    process.env.NODE_ENV === "production"
-                      ? "/manor"
-                      : "" + "/img/layout/general/instagram.svg"
-                  }
+                  src={imagePath + "/img/layout/general/instagram.svg"}
                   alt="image"
                 />
               </Link>
@@ -283,11 +233,7 @@ export default function Header({ data, headerBlack }) {
                 className="social__item"
               >
                 <img
-                  src={
-                    process.env.NODE_ENV === "production"
-                      ? "/manor"
-                      : "" + "/img/layout/general/vimeo-black.png"
-                  }
+                  src={imagePath + "/img/layout/general/vimeo-black.png"}
                   alt="image"
                 />
               </Link>
