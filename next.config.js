@@ -15,7 +15,7 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
-  // assetPrefix: assetPrefix,
+  assetPrefix: assetPrefix,
   basePath: basePath,
 };
 
