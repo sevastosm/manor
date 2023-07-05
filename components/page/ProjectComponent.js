@@ -13,7 +13,7 @@ export default function ProjectComponent({ project }) {
     portrait: "0",
     byline: "0",
     // controls: "0",
-    keyboard: "0",
+    keyboard: "1",
   });
   let gallery_images = project?.gallery_image;
   return (
