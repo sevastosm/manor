@@ -6,14 +6,11 @@ const basePath = `/${repo}`;
 
 const nextConfig = {
   reactStrictMode: true,
-  domains: ["localhost", "sevastosm.github.io/manor", "fonts.googleapis.com"],
+  domains: ["localhost", "sevastosm.github.io", "fonts.googleapis.com"],
   images: {
-    domains: [
-      "sevastosm.github.io/manor",
-      "localhost",
-      "media.graphassets.com",
-    ],
+    domains: ["sevastosm.github.io", "localhost", "media.graphassets.com"],
     unoptimized: true,
+    path: "./",
   },
   assetPrefix: assetPrefix,
   basePath: basePath,
