@@ -3,12 +3,11 @@
 // const repo = "manor";
 // const assetPrefix = `/${repo}`;
 // const basePath = `/${repo}`;
-console.log(process.env.NODE_ENV);
 
 const nextConfig = {
   reactStrictMode: true,
   domains:
-    process.env.NODE_ENV === "production"
+    process.env.NODE_ENV === "github"
       ? [("localhost", "sevastosm.github.io", "fonts.googleapis.com")]
       : null,
   images: {
@@ -16,8 +15,8 @@ const nextConfig = {
     unoptimized: true,
     // path: "./",
   },
-  assetPrefix: process.env.NODE_ENV === "production" ? "/manor" : "",
-  basePath: process.env.NODE_ENV === "production" ? "/manor" : "",
+  assetPrefix: process.env.NODE_ENV === "github" ? "/manor" : "",
+  basePath: process.env.NODE_ENV === "github" ? "/manor" : "",
 };
 
 module.exports = nextConfig;

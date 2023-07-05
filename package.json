@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev -p 5003",
     "build": "next build",
-    "build-static": "cross-env NODE_ENV=static next build && next export",
+    "build-static": "next build && next export",
     "start": "next start -p 3002",
     "lint": "next lint",
-    "deploy": "next build && next export && touch ./out/.nojekyll && gh-pages -d out"
+    "deploy": "cross-env NODE_ENV=github next build && next export && touch ./out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
     "@apollo/client": "^3.7.1",
