@@ -8,7 +8,7 @@
     "build-static": "next build && next export",
     "start": "next start -p 3002",
     "lint": "next lint",
-    "deploy": "cross-env NODE_ENV=github next build && next export && touch ./out/.nojekyll && gh-pages -d out"
+    "deploy": "cross-env next build && next export && touch ./out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
     "@apollo/client": "^3.7.1",
