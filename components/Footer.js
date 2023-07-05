@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import { imagePath } from "../config";
 
-const imagePath = process.env.NODE_ENV === "production" ? "/manor" : "";
 export default function Footer({ data, smallFooter }) {
   const studio = data?.studio;
 

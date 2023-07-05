@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import AnimationText from "./animation/AnimationText";
-
-const imagePath = process.env.NODE_ENV === "production" ? "/manor" : "";
+import { imagePath } from "../config";
 
 export default function Header({ data, headerBlack }) {
   const router = useRouter();
