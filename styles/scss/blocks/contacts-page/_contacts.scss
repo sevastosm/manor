@@ -44,11 +44,16 @@
 	}
 
 	&__address {
-		flex: 0 1 300px;
+		flex: 0 1 390px;
 		text-transform: uppercase;
+
+		@include maxw(1000px) {
+				flex: 0 1 300px;
+			}
 
 		@include minw(1000px) {
 			text-align: right;
+			
 		}
 	}
 }

@@ -98,7 +98,7 @@ export default function Header({ data, headerBlack }) {
                   Manor
                 </Link>
                 <div className="header__address">
-                  <div>89 borough high street London se1 1nl</div>
+                  <div>{studio.adress}</div>
                 </div>
 
                 <div className="header__copyright">

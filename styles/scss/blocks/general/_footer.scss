@@ -22,7 +22,7 @@
 	}
 
 	&__info {
-		flex: 0 1 310px;
+		flex: 0 1 335px;
 
 		@include maxw(640px) {
 			flex: 0 1 100%;
@@ -34,7 +34,7 @@
 
 		@include maxw(640px) {
 			margin-bottom: 20px;
-			max-width: 200px;
+			max-width: 220px;
 		}
 	}
 

@@ -3,6 +3,7 @@
 
 	&__video {
 		height: 55.56vw;
+		background-color: transparent;
 
 		@include minw(1921px) {
 			height: 1023px;

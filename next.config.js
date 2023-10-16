@@ -15,8 +15,7 @@ const nextConfig = {
     unoptimized: true,
     // path: "./",
   },
-  assetPrefix: process.env.NODE_ENV === "production" ? "/manor/" : "",
-  basePath: process.env.NODE_ENV === "production" ? "/manor" : "",
+  basePath: "",
 };
 
 module.exports = nextConfig;
