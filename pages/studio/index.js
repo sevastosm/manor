@@ -26,9 +26,11 @@ function Studio(props) {
   const [studio, setStudio] = useState(null);
   const [clients, setClients] = useState(null);
   const [opporrunities, setOpporrunities] = useState(null);
+  console.log("out");
 
   useEffect(() => {
     const fetchData = async () => {
+      console.log("fetchData");
       let { studio } = await makeQuery(studioQuery);
       let { clients } = await makeQuery(clientsQuery);
       let { opporrunities_open } = await makeQuery(opporrunitiesQuery);
