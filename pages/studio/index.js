@@ -26,7 +26,7 @@ function Studio(props) {
   const [studio, setStudio] = useState(null);
   const [clients, setClients] = useState(null);
   const [opporrunities, setOpporrunities] = useState(null);
-  console.log("out");
+  console.log("out ?");
 
   useEffect(() => {
     const fetchData = async () => {
