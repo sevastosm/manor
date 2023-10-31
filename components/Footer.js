@@ -3,7 +3,16 @@ import React from "react";
 import { imagePath } from "../config";
 
 export default function Footer({ data, smallFooter }) {
-  const studio = data?.studio;
+  const [studio, setStudio] = useState(data?.studio);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      console.log("fetchData");
+      let { studio } = await makeQuery(studioQuery);
+      setStudio(studio);
+    };
+    fetchData();
+  }, []);
 
   let dateF = new Date();
   dateF.setDate(dateF.getDate() + 7);
