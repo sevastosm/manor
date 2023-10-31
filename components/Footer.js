@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { imagePath } from "../config";
+import { makeQuery, studioQuery } from "../services/api";
 
 export default function Footer({ data, smallFooter }) {
   const [studio, setStudio] = useState(data?.studio);
 
   useEffect(() => {
     const fetchData = async () => {
-      console.log("fetchData");
       let { studio } = await makeQuery(studioQuery);
       setStudio(studio);
     };
